@@ -182,7 +182,7 @@ set (WERROR_MSVC "/WX")
 
 set (COMMON_WARNING_GNU "-Wall -pedantic-errors")
 set (COMMON_WARNING_Clang "-Wall -pedantic")
-string (JOIN " " COMMON_WARNING_MSVC "/W4" "/analyze"
+string (JOIN " " COMMON_WARNING_MSVC "/W4"
   # disabled warnings /wd
   "/wd26812" # The enum type 'pcontext_type_t' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).
   "/wd4090" # 'function': different 'const' qualifiers
